@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="background">@color/white</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppSplash" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Bottom Navigation -->
+    <style name="BottomNav" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="itemIconTint">@color/bottomNavItems</item>
+        <item name="itemTextColor">@color/bottomNavItems</item>
+        <item name="background">@color/bottomNavBackground</item>
+    </style>
+
+
+
+</resources>

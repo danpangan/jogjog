@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Jogjog</string>
+
+    <string name="title_home">ホーム</string>
+    <string name="title_favorite">お気に入り</string>
+    <string name="title_history">閲覧履歴</string>
+
+    <string name="back">戻る</string>
+    <string name="search">検索条件</string>
+
+    <!--    Yellow Address-->
+    <string name="rental_properties_list">賃貸物件ー覧</string>
+    <string name="property_list">物件ー覧</string>
+    <string name="map_display">マップ表示</string>
+    <string name="propertypricecheck">この建物の物件を金チェック</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="inquire_store_spinner">
+        <item>いつでもよい</item>
+        <item>10:00 ~ 12:00</item>
+        <item>12:00 ~ 14:00</item>
+        <item>14:00 ~ 16:00</item>
+        <item>16:00 ~ 18:00</item>
+    </string-array>
+
+    <string-array name="inquire_reservation_spinner_left">
+        <item>--</item>
+        <item>10時</item>
+        <item>11時</item>
+        <item>12時</item>
+        <item>13時</item>
+        <item>14時</item>
+        <item>15時</item>
+        <item>16時</item>
+        <item>17時</item>
+    </string-array>
+
+    <string-array name="inquire_reservation_spinner_right">
+    <item>--</item>
+    <item>00分</item>
+    <item>15分</item>
+    <item>30分</item>
+    <item>45分</item>
+    </string-array>
+
+
+</resources>

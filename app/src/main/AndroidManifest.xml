@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cck.jogjog">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/jjlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/jjlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="LockedOrientationActivity">
+        <activity android:name=".DetailsActivity" android:screenOrientation="portrait"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAbfGgaSQFO4HGv5ZumLwqMuVHocEz_4r0" />
+
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:theme="@style/AppSplash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.MainActivity" android:screenOrientation="portrait"/> <!-- yellow -->
+        <activity android:name=".Activities.yellow.yellowLocationActivity" />
+        <activity android:name=".Activities.yellow.yellowAddressActivity" />
+        <activity android:name=".Activities.yellow.yellowLineActivity" />
+        <activity android:name=".Activities.yellow.yellowSchoolActivity" /> <!-- blue -->
+        <activity android:name=".Activities.blue.blueLocationActivity" />
+        <activity android:name=".Activities.blue.blueAddressActivity" />
+        <activity android:name=".Activities.blue.blueLineActivity" />
+        <activity android:name=".Activities.blue.blueSchoolActivity" /> <!-- green -->
+        <activity android:name=".Activities.green.greenLocationActivity" />
+        <activity android:name=".Activities.green.greenAddressActivity" />
+        <activity android:name=".Activities.green.greenLineActivity" />
+        <activity android:name=".Activities.green.greenSchoolActivity" />
+    </application>
+
+</manifest>

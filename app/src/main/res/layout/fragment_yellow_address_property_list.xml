@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:id="@+id/sv_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_inquire">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_inquire">
+
+            <LinearLayout
+                android:id="@+id/llcont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/btn_nextpage"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_nextpage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/blackbuttontext_states"
+                android:backgroundTint="@color/blackbutton_states"
+                android:backgroundTintMode="multiply"
+                android:enabled="false"
+                android:text="次の10件を読み込み"
+                app:layout_constraintTop_toBottomOf="@id/llcont"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_inquire"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/blackbuttontext_states"
+        android:backgroundTint="@color/blackbutton_states"
+        android:backgroundTintMode="multiply"
+        android:visibility="gone"
+        android:text="チェックした物件のお問い合わせ"
+        app:layout_constraintTop_toBottomOf="@id/sv_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
